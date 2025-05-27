@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片上传服务</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>图片上传服务</h1>
+        </div>
+    </header>
+    
+    <main class="container">
+        <!-- 消息提示区域 -->
+        <div id="message-container"></div>
+        
+        <!-- 上传区域 -->
+        <section class="upload-container">
+            <h2>上传图片</h2>
+            <form id="upload-form">
+                <div class="file-input-container">
+                    <input type="file" id="file-input" class="file-input" accept="image/*">
+                </div>
+                <button type="submit" id="upload-btn" class="upload-btn" disabled>上传图片</button>
+            </form>
+        </section>
+        
+        <!-- 图片列表 -->
+        <section class="image-list">
+            <h2>图片列表</h2>
+            <!-- 加载状态 -->
+            <div id="loader" class="loader" style="display: none;"></div>
+            <!-- 图片网格 -->
+            <div id="image-grid" class="image-grid">
+                <!-- 图片卡片将在这里动态生成 -->
+                <p>加载中...</p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="/static/js/main.js"></script>
+</body>
+</html> 
